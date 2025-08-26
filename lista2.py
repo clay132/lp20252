@@ -16,6 +16,15 @@ def q1():
 #   Caso o valor somado seja maior que 20, este deverá ser apresentado
 #   somando-se a ele mais 8, caso o valor somado seja menor ou igual a
 #   20, este deverá ser apresentado subtraindo-se 5.
+def q2 ():
+    n1= int(input("digita um numero: "))
+    n2= int(input("digita um numero: "))
+    soma= n2 +n1
+    if soma >=20:
+        print (soma + 8)
+    else :
+        print (soma + 5)
+
 
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
@@ -152,4 +161,3 @@ def q1():
 #0,3 1º grupo
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
-q1()
