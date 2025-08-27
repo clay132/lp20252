@@ -29,8 +29,28 @@ def q2 ():
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
+def q3 ():
+    n1=float(input("digita um numero : "))
+    div= n1%3
+    if div == 0:
+     print ("È múltiplo por 3")
+    else:
+     print ("não é multiplo de 3")
+
+
+
+
 
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
+def q4 ():
+    n1=float(input("digita um numero : "))
+    div= n1%5
+    if div == 0:
+     print ("È múltiplo por 5")
+    else:
+     print ("não é multiplo de 5")
+
+
 
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 
