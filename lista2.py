@@ -53,6 +53,18 @@ def q4 ():
 
 
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
+def q5 ():
+ n1=float(input("digita um numero:"))
+ div=n1%3
+ div2= n1%7
+ if div==0 and div2==0:
+    print ("esse numero é multiplo por 3 e 7")
+ elif div2== 0:
+    print("esse numero é multiplo por 7")
+ elif div==0:
+    print ("esse numero é multiplo por 3")   
+ else :
+    print("nao é multiplo por nenhuma ")    
 
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
