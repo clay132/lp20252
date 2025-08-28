@@ -70,21 +70,70 @@ def q5 ():
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
 #   bruto. Faça um programa que permita entrar com o salário bruto
 #   e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
+def q6 ():
+    valor_salario= float(input("qual é o valor do seu salario: "))
+    valor_emprestimo= float(input("qual é o valor do emprestimo que deseja: "))
+    porcet=(30/100)* valor_salario
+    if valor_emprestimo <=porcet:
+        print("emprestimo concedido")
+    else:
+     print("emprestimo nao concedido ")
+
+
 
 #7. Faça um programa que leia um número e indique se o número está compreendido
 #   entre 20 e 50 ou não.
+def q7():
+ n1= int(input("digita um numero:"))
+ if n1>=20 and n1<=50:
+  print ("compreendido entre 20 ou 50")
+ else:
+    print ("nao compreendido")
+
 
 #8. Faça um programa que leia um número e imprima uma das mensagens:
 #   "Maior do que 20", "Igual a 20"ou "Menor do que 20".
+def q8 ():
+ n1= int(input("digita um numero"))
+ if 20 == n1 :
+    print("igual a 20")
+ elif 20 >n1:
+    print ("menor que 20")
+ else :
+     print("maior que 20")   
+
 
 #9. Faça um programa que permita entrar com o ano de nascimento da pessoa e com o
 #   ano atual. O programa deve imprimir a idade da pessoa. Não se esqueça de
 #   verificar se o ano de nascimento informado é válido.
 
+ # 9. Faça um programa que permita entrar com o ano de nascimento da pessoa e com o
+# ano atual. O programa deve imprimir a idade da pessoa.
+# Não se esqueça de verificar se o ano de nascimento informado é válido.
+
+def q9():
+    ano_nascimento = int(input("Ano de nascimento: "))
+    ano_atual = int(input("Ano atual: "))
+
+    if ano_nascimento > ano_atual:
+        print("Ano de nascimento inválido")
+    else:
+        idade = ano_atual - ano_nascimento
+        print("A sua idade é", idade, "anos")
+  
+
+   
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
-        
+def q10():
+ n1= int(input("digita um numero:"))
+ n2= int(input("digita um numero:"))
+ n3= int(input("digita um numero:"))
+ numero = [n1,n2,n3]
+ numero.sort ()
+ print (numero)
 #11. Faça um programa que leia 3 números e imprima o maior deles.
+
 
 #12. Faça um programa que leia a idade de uma pessoa e informe:
 #• Se é maior de idade
@@ -193,3 +242,4 @@ def q5 ():
 #0,3 1º grupo
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
+q10()
