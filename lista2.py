@@ -133,18 +133,49 @@ def q10():
  numero.sort ()
  print (numero)
 #11. Faça um programa que leia 3 números e imprima o maior deles.
+def q11():
+    
+    n1 = float(input("Digite o primeiro número: "))
+    n2 = float(input("Digite o segundo número: "))
+    n3 = float(input("Digite o terceiro número: "))
+    maior = max(n1, n2, n3)
+    print("O maior número é:", maior)
 
 
-#12. Faça um programa que leia a idade de uma pessoa e informe:
-#• Se é maior de idade
-#• Se é menor de idade
-#• Se é maior de 65 anos
+def q12():
+    idade = int(input("Digite a idade: "))
+
+    if idade >= 65:
+        print("Maior que 65 anos")
+    elif idade >= 18:
+        print("Maior de idade")
+    else:
+        print("Menor de idade")
 
 #13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota
 #da prova 2 de um aluno. O programa deve imprimir o nome, a nota da prova 1,
 #a nota da prova 2, a média das notas e uma das mensagens: "Aprovado",
 #"Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para
 #reprovação e as demais em prova final).
+def q13():
+    nome = input("Digite o nome do aluno: ")
+    nota1 = float(input("Nota da prova 1: "))
+    nota2 = float(input("Nota da prova 2: "))
+
+    media = (nota1 + nota2) / 2
+
+    print("Aluno:",nome)
+    print("Nota 1:",nota1)
+    print("Nota 2:", nota2)
+    print("Média:", media)
+
+    if media >= 7:
+        print("Aprovado")
+    elif media < 3:
+        print("Reprovado")
+    else:
+        print("Em Prova Final")
+
 
 #14. Faça um programa que permita entrar com o salário de uma pessoa e imprima o
 #desconto do INSS segundo a tabela seguir:
