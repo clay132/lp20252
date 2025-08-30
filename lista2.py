@@ -184,10 +184,33 @@ def q13():
 #Maior que R$600,00 e menor ou igual a R$1200,00 20%
 #Maior que R$1200,00 e menor ou igual a R$2000,00 25%
 #Maior que R$2000,00 30%
+def q14 ():
+ salario=float(input("digita o seu salario: "))
+ if salario<=600:
+    print ("isento")
+ elif salario >600 and salario<= 1200:
+    print ("inss", salario* 0.20)
+ elif salario >1200 and salario<=2000:
+    print ("inss",salario*0.25)
+ else:
+   print ("inss",salario * .30)
+
+
 
 #15. Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o
 #valor da compra for menor que R$20,00, caso contrário, o lucro será de 30%.
 #Faça um programa que leia o valor do produto e imprima o valor da venda.
+def q15():
+
+ valorp= float(input("qual é o valor : "))
+
+ if valorp < 20:
+  print("o lavor é",valorp*1.45)
+ else:
+  print ("o valor é",valorp*1.30)
+
+
+
 
 #16. A confederação brasileira de natação irá promover eliminatórias para o
 #próximo mundial. Faça um programa que receba a idade de um nadador e imprima
@@ -198,6 +221,21 @@ def q13():
 #Juvenil A 11 - 13 anos
 #Juvenil B 14 - 17 anos
 #Sênior maiores de 18 anos
+def q16():
+ idade=int(input("idade"))
+ if idade>=5 and idade <=7:
+  print("infantilA")
+ elif idade >=8 and idade<=10:
+  print ("infatilB")  
+ elif idade >=11 and idade <=13:
+  print("juvenilA")
+ elif idade>= 14 and idade <= 17:
+  print ("juvenilB")
+ elif idade<5:
+  print("nao entra ") 
+ else:
+  print("senior")
+
 
 #17. Depois da liberação do governo para as mensalidades dos planos de saúde,
 #as pessoas começaram a fazer pesquisas para descobrir um bom plano, não
@@ -273,4 +311,4 @@ def q13():
 #0,3 1º grupo
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
-q10()
+q16()
