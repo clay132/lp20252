@@ -249,10 +249,59 @@ def q16():
 #Acima de 45 até 59 anos R$150,00
 #Acima de 59 até 65 anos R$250,00
 #Maior que 65 anos R$400,00
+def q17():
+ nome = input("qual é o seu nome :")
+ idade= int(input("quantos anos vocẽ tem:"))
+ if idade <= 10:
+  print(" paga 30")
+ elif idade>10 and idade <= 29:
+  print(" paga 60")
+ elif idade>29 and idade <= 45:
+  print ("paga 120")
+ elif idade>45 and idade<=59:
+  print("paga 150")
+ elif idade>59 and idade<=65:
+  print ("paga 250")
+ else:
+  print ("paga 400") 
+  
+
 
 #18. Faça um programa que leia um número inteiro entre 1 e 12 e escreva o mês
 #correspondente. Caso o usuário digite um número fora desse intervalo, deverá
 #aparecer uma mensagem informando que não existe mês com este número.
+def q18():
+ num= int(input("digita um numero de 1 a 12:"))
+ if num == 1:
+  print("janeiro")
+ elif num ==2:
+  print ("fevereiro")
+ elif num == 3:
+  print ("março")
+ elif num ==4:
+  print ("abril")
+ elif num ==5:
+  print ("maio")  
+ elif  num ==6:
+  print ("junho")   
+ elif num ==7:
+  print ("julho")
+ elif num ==8:
+  print("agosto")
+ elif num==9: 
+  print ("setembro")
+ elif num == 10:
+  print ("outubro")
+ elif num == 11:
+  print ("novembro")
+ elif num==12:
+  print ("dezembro") 
+ else:
+  print ("nao exista mes com esse numero")
+
+
+  
+
 
 #19. Em um campeonato nacional de arco-e-flecha, tem-se equipes de três jogadores
 #para cada estado. Sabendo-se que os arqueiros de uma equipe não obtiveram o
@@ -262,6 +311,7 @@ def q16():
 #• Mostrar esses em ordem decrescente;
 #• Se a soma dos pontos for maior do que 100, imprimir a média aritmética entre eles,
 #  caso contrário, imprimir a mensagem "Equipe desclassificada".
+
 
 #20. O banco XXX concederá um crédito especial com juros de 2% aos seus clientes de
 #acordo com o saldo médio no último ano. Faça um programa que leia o saldo médio
@@ -311,4 +361,4 @@ def q16():
 #0,3 1º grupo
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
-q16()
+q18()
