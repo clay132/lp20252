@@ -429,6 +429,7 @@ def q23():
 #faça um programa que, a partir da leitura da placa do carro, informe o mês
 #em que o emplacamento deve ser renovado.
 
+
 #25. A prefeitura contratou uma firma especializada para manter os níveis de
 #poluição considerados ideais para um país do 1º mundo. As indústrias,
 #maiores responsáveis pela poluição, foram classificadas em três grupos.
@@ -439,4 +440,18 @@ def q23():
 #0,3 1º grupo
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
-q23()
+
+def q25():
+ indice = float(input("Digite o índice : "))
+ if indice <= 0.25:
+  print("Poluição dentro do limite")
+ elif indice == 0.3:
+  print("1º grupo de indústrias")
+ elif indice == 0.4:
+  print("1º e 2º grupos de indústrias")
+ elif indice >= 0.5:
+  print(" 1º, 2º e 3º grupos de indústrias")
+ else:
+  print("Índice de poluição não corresponde a um valor da tabela.")
+
+q25()
