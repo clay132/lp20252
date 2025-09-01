@@ -378,6 +378,16 @@ def q21():
 #22. Construa um programa que leia o percurso em quilômetros, o tipo do carro e
 #informe o consumo estimado de combustível, sabendo-se que um carro tipo A faz
 #12 km com um litro de gasolina, um tipo B faz 9 km e o tipo C 8 km por litro.
+def q22():
+ per=float(input("quantos km andado: "))
+ tipo_car=input("qual é o tipo do carro: ")
+ if tipo_car=="A":
+  print(per/12)
+ elif tipo_car=="B":
+  print(per/9)
+ else:
+  print(per/8) 
+
 
 #23. Crie um programa que informe a quantidade total de calorias de uma refeição
 #a partir da escolha do usuário que deverá informar o prato, a sobremesa, e
@@ -387,6 +397,31 @@ def q21():
 #Peixe          230cal Sorvete diet     110cal Suco de laranja   70cal
 #Frango         250cal Mousse diet      170cal Suco de melão     100cal
 #Carne          350cal Mousse chocolate 200cal Refrigerante diet 65cal
+def q23():
+ print("1-vegetariano(180)")
+ print("2-peixe(230)")
+ print("3-frango(250)")
+ print("4-carne(350)")
+ pratoh=int(input("numero do prato: "))
+
+ print("1-abacaxi(75)")
+ print("2-sorvete diet(110)")
+ print("3-mousse diet(170)")
+ print("4-mousse chocolate(200)")
+ sobreh=int(input("numero sobremesa: "))
+
+ print("1-chá(20)")
+ print("2-suco de laranja(70)") 
+ print("3-suco de melão(100)")
+ print("4-refri (65)")
+ bebidah=int(input("numero da bebida: "))
+
+ prato=[180, 230, 250, 350]
+ sobre=[75, 110, 170, 200]
+ bebida=[20, 70, 100, 65]
+ total= prato[pratoh -1]+sobre[sobreh-1]+bebida[bebidah -1]
+ print ("total de calorias:",total)
+
 
 #24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para
 #cobrar dos motoristas o DUT. Sabendo-se que o mês em que o emplacamento do
@@ -404,4 +439,4 @@ def q21():
 #0,3 1º grupo
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
-q21()
+q23()
