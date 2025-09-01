@@ -311,6 +311,20 @@ def q18():
 #• Mostrar esses em ordem decrescente;
 #• Se a soma dos pontos for maior do que 100, imprimir a média aritmética entre eles,
 #  caso contrário, imprimir a mensagem "Equipe desclassificada".
+def q19():
+ n1= int(input("digita um numero: "))
+ n2= int (input("digita um numero: "))
+ n3= int (input("digita um numero: "))
+ numero= [n1,n2,n3]
+ numero.sort(reverse=True)
+ print(numero)
+ soma=sum(numero)
+ if soma>100:
+  media= soma/3
+  print("media ",media)
+ else:
+  print("desclassificada")
+
 
 
 #20. O banco XXX concederá um crédito especial com juros de 2% aos seus clientes de
@@ -323,6 +337,21 @@ def q18():
 #de 501 a 1000 30% do valor do saldo médio
 #de 1001 a 3000 40% do valor do saldo médio
 #acima de 3001 50% do valor do saldo médio
+def q20():
+ saldo=float(input("digita o seu saldo: "))
+ if saldo<=500:
+  print("saldo:",saldo) 
+  print("nenhum crédito: ")
+ elif saldo>= 501 and saldo <=1000:
+  print("saldo:",saldo) 
+  print(saldo*0.30)
+ elif saldo>= 1001 and saldo<=3000:
+  print("saldo",saldo)
+  print(saldo*0.40)
+ else:
+  print("saldo",saldo)
+  print(saldo*0.50)
+
 
 #21. A biblioteca de uma Universidade deseja fazer um programa que leia o nome do
 #livro que será emprestado, o tipo de usuário (professor ou aluno) e possa
@@ -331,6 +360,20 @@ def q18():
 #• Nome do livro:
 #• Tipo de usuário:
 #• Total de dias:
+def q21():
+ livro=input("nome do livro")
+ usuario=input("aluno ou professor:")
+ if usuario== "aluno":
+  dia=3
+ else:
+  dia=10
+ print("*****recibo*****")
+ print("nome do livro",livro)
+ print("usuario",usuario)
+ print("total de dia ",dia)  
+
+
+
 
 #22. Construa um programa que leia o percurso em quilômetros, o tipo do carro e
 #informe o consumo estimado de combustível, sabendo-se que um carro tipo A faz
@@ -361,4 +404,4 @@ def q18():
 #0,3 1º grupo
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
-q18()
+q21()
