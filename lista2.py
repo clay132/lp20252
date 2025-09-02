@@ -428,6 +428,21 @@ def q23():
 #carro deve ser renovado é determinado pelo último número da placa do mesmo,
 #faça um programa que, a partir da leitura da placa do carro, informe o mês
 #em que o emplacamento deve ser renovado.
+def q24():
+ placa=input("digita a placa: ") 
+ ult=placa[-1]
+ if ult=="1" or ult=="2":
+  print("janeiro/fevereiro")
+ elif ult=="3" or  ult=="4":
+  print("março/abril")
+ elif ult=="5" or  ult=="6":
+  print("maio/junho")
+ elif ult=="7" or   ult=="8":
+  print("julho/agosto")
+ elif ult== "9" or ult=="0":
+  print("setembro/outubro") 
+ else:
+  print("não tem placa com esse final")        
 
 
 #25. A prefeitura contratou uma firma especializada para manter os níveis de
@@ -454,4 +469,4 @@ def q25():
  else:
   print("Índice de poluição não corresponde a um valor da tabela.")
 
-q25()
+q24()
