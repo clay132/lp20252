@@ -1,13 +1,60 @@
 # 1. Peça o nome do usuário e imprima "Olá, <nome>"
+def q1():
+ nm=input("escreva o seu nome")
+ print ("olá",nome)
 # 2. Peça a idade do usuário e imprima "Você tem <idade> anos"
+def q2():
+ idade=input("digita idade: ")
+ print(idade,"anos")
 # 3. Peça dois números e imprima a soma deles
+def q3():
+ numero_1=int(input("digita um numero: "))
+ numero_2=int(input("digita um numero"))
+ print(numero_2 + numero_1)
 # 4. Peça dois números e imprima a média
+def q4():
+    soma=0
+    for i in range(2):
+     numero=int(input("digita um numero: "))
+     soma+= numero
+    media= soma/2
+    print(media)   
 # 5. Peça três números e use sum() para somá-los
+def q5():
+    
+  numero=[int(input("digita um numero "))for i in range(3)]
+  print(sum(numero))
+     
 # 6. Peça três números e use len() para mostrar quantos números foram digitados
+def q6():
+ numero=[int(input(f"digita {i+1}° numero: "))for i in range(3)]
+ print("a quantidade de numero digitados são",len(numero))
+
 # 7. Pergunte o nome e a idade do usuário e mostre o tipo de cada variável usando type()
+def q7():
+    nome= input ("escreva nome")
+    idade= int(input("digita idade: "))
+    print(type(nome), nome)
+    print(type(idade),idade)
 # 8. Crie uma função que recebe o nome do usuário e imprime "Bem-vindo, <nome>"
+def q8 ():
+    nome=input("escreva o seu nome: ")
+    print("bem vindo", nome)
 # 9. Crie uma função que soma dois números
+def q9():
+    
+    nm1 = int(input("Digite o primeiro número: "))
+    nm2 = int(input("Digite o segundo número: "))
+    
+    soma = nm1 + nm2
+    print("A soma dos números é:", soma)
+
+
+
 # 10. Crie uma função que retorna o maior número entre dois números
+def q10():
+    nm=[int(input(f"digita {i +1} numero: ")) for i in range(2)]
+    print(max(nm))
 # 11. Crie uma lista de 5 frutas e imprima cada uma usando for
 # 12. Adicione uma fruta na lista criada no exercício anterior
 # 13. Remova a última fruta da lista
@@ -49,3 +96,4 @@
 # 49. Crie um arquivo "numeros.txt" e salve 10 números dentro, um por linha
 # 50. Abra o arquivo "numeros.txt" e calcule a soma de todos os números
 
+q10()
