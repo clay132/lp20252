@@ -93,10 +93,30 @@ def q16():
     cores[0]=("verde")
 
 # 17. Crie um dicionário com "nome", "idade" e "curso" e imprima o nome
+def q17():
+ aluno={
+  "nome": "clay",
+  "idade":18,
+  "curso":"rede computadores"
+  }
+
+ print(aluno["nome"])
+ return aluno
+ 
 # 18. Adicione uma nova chave "cidade" ao dicionário
+def q18():
+ aluno= q17()
+ aluno["cidade"]="cuiaba"
+ print(aluno["cidade"])
+ return aluno
 # 19. Altere o valor da idade no dicionário
+def q19():
+ aluno=q18()
+ aluno["idade"]=19
+ print(aluno["idade"])
+
 # 20. Crie um conjunto com 5 números, alguns repetidos, e veja quais sobraram
-# 21. Pergunte ao usuário números separados por espaço, transforme em lista e use sum()
+# 21. Pergunte ao usuário números separados por espiaço, transforme em lista e use sum()
 # 22. Crie um loop for que imprime números de 0 a 9
 # 23. Crie um loop while que imprime números de 0 a 9
 # 24. Crie um loop while que pede um número até o usuário digitar 0
@@ -129,4 +149,4 @@ def q16():
 
 
 
-q16()
+q19()
