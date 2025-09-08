@@ -1,3 +1,4 @@
+lista= ["maça","melancia","banana","melão","uva"]
 # 1. Peça o nome do usuário e imprima "Olá, <nome>"
 def q1():
  nm=input("escreva o seu nome")
@@ -56,11 +57,41 @@ def q10():
     nm=[int(input(f"digita {i +1} numero: ")) for i in range(2)]
     print(max(nm))
 # 11. Crie uma lista de 5 frutas e imprima cada uma usando for
+def q11():
+ global lista
+ for i, fruta in  enumerate (lista, start=1):
+  print(i,fruta)
+  
+ 
 # 12. Adicione uma fruta na lista criada no exercício anterior
+def q12():
+ global lista
+ lista.append("laranja")#esse .append adiciona coisas dentro de lista 
+ for i,fruta in  enumerate (lista,start=1):
+  print(i,fruta)
+ 
 # 13. Remova a última fruta da lista
+def q13():
+ global lista
+ lista.pop()
+ for i, fruta in enumerate(lista,start=1) :
+  print(i,fruta)
+  return lista
+ 
 # 14. Mostre quantos itens existem na lista usando len()
+def q14():
+ lista=q13()
+ print(len(lista)) # "len()mostra a quantidade de coisas que ta na lista"
 # 15. Crie uma tupla com 3 cores e imprima a primeira cor
+def q15():
+    cores=("vermelho","azul","amarelo")
+    print(cores[0])
+    return cores
 # 16. Tente mudar o primeiro item da tupla (veja o erro)
+def q16():
+    cores=q15()
+    cores[0]=("verde")
+
 # 17. Crie um dicionário com "nome", "idade" e "curso" e imprima o nome
 # 18. Adicione uma nova chave "cidade" ao dicionário
 # 19. Altere o valor da idade no dicionário
@@ -96,4 +127,6 @@ def q10():
 # 49. Crie um arquivo "numeros.txt" e salve 10 números dentro, um por linha
 # 50. Abra o arquivo "numeros.txt" e calcule a soma de todos os números
 
-q10()
+
+
+q16()
