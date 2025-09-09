@@ -116,9 +116,23 @@ def q19():
  print(aluno["idade"])
 
 # 20. Crie um conjunto com 5 números, alguns repetidos, e veja quais sobraram
+def q20():
+ conjunto={1,2,2,3,4,5}
+ print(conjunto)
+
 # 21. Pergunte ao usuário números separados por espiaço, transforme em lista e use sum()
+def q21():
+ nm=input("digita numeros separados por espaço: ")
+ nm2= nm.split() # "aqui o split trasforma string em lista"
+ nm3= [int(item) for item in nm2]
+ print(sum(nm3))
+ 
 # 22. Crie um loop for que imprime números de 0 a 9
+def q22():
+ for i in range(10):
+   print(i)
 # 23. Crie um loop while que imprime números de 0 a 9
+
 # 24. Crie um loop while que pede um número até o usuário digitar 0
 # 25. Crie uma função que recebe uma lista de números e retorna a soma
 # 26. Crie uma função que recebe uma lista e retorna a média
@@ -149,4 +163,4 @@ def q19():
 
 
 
-q19()
+q22()
