@@ -132,13 +132,51 @@ def q22():
  for i in range(10):
    print(i)
 # 23. Crie um loop while que imprime números de 0 a 9
+def q23():
+   n=0
+   while n<10:
+    print(n)
+    n+=1
 
 # 24. Crie um loop while que pede um número até o usuário digitar 0
+def q24():
+    while True:
+      numero_digitar=int(input("digita um numero: "))
+      if numero_digitar==0:
+        print("numero certo")
+        break
+      else:
+        print(numero_digitar)
+     
 # 25. Crie uma função que recebe uma lista de números e retorna a soma
+def q25 (soma):
+  return sum(soma)
+  
+  
 # 26. Crie uma função que recebe uma lista e retorna a média
+def q26(lista):
+   soma=sum(lista)
+   quantidade=len(lista)
+   media= soma/quantidade
+   return media
+
 # 27. Crie uma função que recebe um número e retorna True se for par, False se for ímpar
+def q27(numero):
+  if numero%2==0:
+   return True
+  else:
+   return False
 # 28. Crie uma função que recebe um número e retorna o fatorial (use math.factorial)
+def q28(numero):
+  import math 
+  resultado=math.factorial(numero)
+  return resultado
+
 # 29. Crie uma função que recebe o raio e retorna a área do círculo (use math.pi)
+def q29(raio):
+  import math
+  area=math.pi*(raio**2)
+  return area
 # 30. Abra um arquivo e escreva uma linha de texto
 # 31. Abra o mesmo arquivo e adicione mais uma linha sem apagar o que já tem
 # 32. Abra o arquivo e leia todo o conteúdo
@@ -161,6 +199,5 @@ def q22():
 # 49. Crie um arquivo "numeros.txt" e salve 10 números dentro, um por linha
 # 50. Abra o arquivo "numeros.txt" e calcule a soma de todos os números
 
-
-
-q22()
+nn=50
+print(q29(nn))
