@@ -177,8 +177,14 @@ def q29(raio):
   import math
   area=math.pi*(raio**2)
   return area
-# 30. Abra um arquivo e escreva uma linha de texto
+# 30. Abra um arquivo e escreva uma linha de texto# 31. Abra o mesmo arquivo e adicione mais uma linha sem apagar o que já tem
+
+def q30(arquivo,texto):
+  with open("ola.py","w") as arq:#é so colocar *a* no lugar do w pra escreve sem apagar
+    arq.write(texto)
+    print(f"texto: {texto}  o arquivo é  {arquivo}")
 # 31. Abra o mesmo arquivo e adicione mais uma linha sem apagar o que já tem
+
 # 32. Abra o arquivo e leia todo o conteúdo
 # 33. Abra o arquivo e leia linha por linha usando loop
 # 34. Crie uma lista vazia e adicione 5 números usando append
@@ -199,5 +205,4 @@ def q29(raio):
 # 49. Crie um arquivo "numeros.txt" e salve 10 números dentro, um por linha
 # 50. Abra o arquivo "numeros.txt" e calcule a soma de todos os números
 
-nn=50
-print(q29(nn))
+q30("ola.py","\n ola clay pierre \n como vc ta ") 
