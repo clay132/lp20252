@@ -177,17 +177,32 @@ def q29(raio):
   import math
   area=math.pi*(raio**2)
   return area
-# 30. Abra um arquivo e escreva uma linha de texto# 31. Abra o mesmo arquivo e adicione mais uma linha sem apagar o que já tem
+# 30. Abra um arquivo e escreva uma linha de texto
 
 def q30(arquivo,texto):
-  with open("ola.py","w") as arq:#é so colocar *a* no lugar do w pra escreve sem apagar
+  with open(arquivo,"w") as arq:#é so colocar *a* no lugar do w pra escreve sem apagar
     arq.write(texto)
     print(f"texto: {texto}  o arquivo é  {arquivo}")
 # 31. Abra o mesmo arquivo e adicione mais uma linha sem apagar o que já tem
-
+def q31(arquivo,texto):
+  with open(arquivo,"a") as arq:#é so colocar *a* no lugar do w pra escreve sem apagar
+    arq.write(texto)
+    print(f"texto: {texto}  o arquivo é  {arquivo}")
 # 32. Abra o arquivo e leia todo o conteúdo
+def q32(arquivo):
+  with open(arquivo,"r")as arq:
+    conteudo=arq.read()
+  print(f"o arquivo é {arquivo}:\n{conteudo}")
+  return conteudo
 # 33. Abra o arquivo e leia linha por linha usando loop
+def q33(arquivo):
+   conteudo= q32(arquivo)
+   linhas= conteudo.splitlines()
+   for i,linha in enumerate (linhas, start=1):
+     print(f"linha{i}:{linha}")
+
 # 34. Crie uma lista vazia e adicione 5 números usando append
+
 # 35. Crie uma lista com números de 1 a 10 usando range()
 # 36. Use um for para imprimir os quadrados dos números de 1 a 10
 # 37. Crie um loop que percorre uma lista e imprime somente os números pares
@@ -205,4 +220,4 @@ def q30(arquivo,texto):
 # 49. Crie um arquivo "numeros.txt" e salve 10 números dentro, um por linha
 # 50. Abra o arquivo "numeros.txt" e calcule a soma de todos os números
 
-q30("ola.py","\n ola clay pierre \n como vc ta ") 
+q33("ola.py")
