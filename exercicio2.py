@@ -202,11 +202,37 @@ def q33(arquivo):
      print(f"linha{i}:{linha}")
 
 # 34. Crie uma lista vazia e adicione 5 números usando append
+def q34():
+  listal=[]
+  listal.append(5)
+  listal.append(6)
+  listal.append(7)
+  listal.append(8)
+  listal.append(9)
+  print(listal)
 
+  
 # 35. Crie uma lista com números de 1 a 10 usando range()
+def q35():
+  
+ listal= list(range(1, 11))
+ print(listal)
 # 36. Use um for para imprimir os quadrados dos números de 1 a 10
+def q36():
+  for numero in range(1, 11):
+        print(numero**2)
 # 37. Crie um loop que percorre uma lista e imprime somente os números pares
+def q37():
+  lista=[2,3,4,5,6,7,8,9,10] 
+  for numero in lista:
+    if numero % 2==0:
+     print(numero)
+    
+
 # 38. Crie uma lista com nomes e use len() para imprimir quantos nomes tem
+def q38():
+ lista=["clay","marjorie", "julson"]
+ print(len(lista))
 # 39. Crie um dicionário de alunos e notas e imprima a média das notas
 # 40. Crie um conjunto com letras de uma palavra e veja quantas letras únicas existem
 # 41. Crie uma função que recebe uma lista de palavras e retorna a palavra mais longa
@@ -220,4 +246,4 @@ def q33(arquivo):
 # 49. Crie um arquivo "numeros.txt" e salve 10 números dentro, um por linha
 # 50. Abra o arquivo "numeros.txt" e calcule a soma de todos os números
 
-q33("ola.py")
+q38()
