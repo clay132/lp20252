@@ -244,8 +244,27 @@ def q39():
  media= ( dicionario["nota_1"] +dicionario[ "nota_2"]) /2
  print(media)
 # 40. Crie um conjunto com letras de uma palavra e veja quantas letras únicas existem
+def q40():
+ palavra=input("escreva uma palavra: ")
+ conjunto=set(palavra)
+ print(len(conjunto)) 
+
 # 41. Crie uma função que recebe uma lista de palavras e retorna a palavra mais longa
+def q41():
+ palavra_1= input("escreva um palavra :")
+ palavra_2= input("escreva um palavra :")
+ verificar_1=len(palavra_1)
+ verificar_2=len(palavra_2)
+ if verificar_1 > verificar_2:
+  print("a primeira palavra é maior ")
+ else:
+  print("a segunda e maior ")
+  
 # 42. Crie uma função que recebe uma lista de números e retorna o menor número
+def q42(numero):
+ print(numero)
+ numero_menor=min(numero)
+ return numero_menor
 # 43. Crie um loop while que pede números até a soma passar de 100
 # 44. Crie uma função que recebe um número e retorna True se for primo
 # 45. Peça 5 números do usuário e armazene em uma lista usando loop
@@ -254,5 +273,5 @@ def q39():
 # 48. Crie um dicionário com nomes de pessoas e idades, e imprima só as pessoas maiores de 18
 # 49. Crie um arquivo "numeros.txt" e salve 10 números dentro, um por linha
 # 50. Abra o arquivo "numeros.txt" e calcule a soma de todos os números
-
-q39()
+nn=[1,2,3,4,5]
+print(q42(nn))
