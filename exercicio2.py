@@ -234,6 +234,15 @@ def q38():
  lista=["clay","marjorie", "julson"]
  print(len(lista))
 # 39. Crie um dicionário de alunos e notas e imprima a média das notas
+def q39():
+ dicionario={
+ "aluno":input(""),
+ "nota_1":int(input("nota 1:")),
+ "nota_2": int(input("nota 2:"))
+
+ }
+ media= ( dicionario["nota_1"] +dicionario[ "nota_2"]) /2
+ print(media)
 # 40. Crie um conjunto com letras de uma palavra e veja quantas letras únicas existem
 # 41. Crie uma função que recebe uma lista de palavras e retorna a palavra mais longa
 # 42. Crie uma função que recebe uma lista de números e retorna o menor número
@@ -246,4 +255,4 @@ def q38():
 # 49. Crie um arquivo "numeros.txt" e salve 10 números dentro, um por linha
 # 50. Abra o arquivo "numeros.txt" e calcule a soma de todos os números
 
-q38()
+q39()
