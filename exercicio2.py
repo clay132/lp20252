@@ -266,12 +266,23 @@ def q42(numero):
  numero_menor=min(numero)
  return numero_menor
 # 43. Crie um loop while que pede números até a soma passar de 100
+def q43 ():
+
+  numero= 0
+  pe=(input("digita um numero: "))
+  while numero<100:
+    numero+= 1
+    pe=(input("digita um numero: "))
+
+ 
 # 44. Crie uma função que recebe um número e retorna True se for primo
+def q44(numero):
+  
+
 # 45. Peça 5 números do usuário e armazene em uma lista usando loop
 # 46. Use for para imprimir os índices de uma lista (use range(len(lista)))
 # 47. Crie um programa que lê uma lista de números e imprime a soma e a média
 # 48. Crie um dicionário com nomes de pessoas e idades, e imprima só as pessoas maiores de 18
 # 49. Crie um arquivo "numeros.txt" e salve 10 números dentro, um por linha
 # 50. Abra o arquivo "numeros.txt" e calcule a soma de todos os números
-nn=[1,2,3,4,5]
-print(q42(nn))
+q43()
