@@ -277,12 +277,60 @@ def q43 ():
  
 # 44. Crie uma função que recebe um número e retorna True se for primo
 def q44(numero):
-  
+ if  numero<2:
+  return False 
+ for i in range (2,int(numero**0.5)+1):
+   if numero % i==0:
+     return False 
+ return True 
 
 # 45. Peça 5 números do usuário e armazene em uma lista usando loop
+def q45():
+  listal=[]
+  for i in range(5):
+   n1=int(input(" digita 5  numero: "))
+   listal.append(n1)
+  print(listal)
 # 46. Use for para imprimir os índices de uma lista (use range(len(lista)))
+def q46():
+ lista=[3,4,5,6,7,9]
+ for i in range(len(lista)):
+  print(i)
 # 47. Crie um programa que lê uma lista de números e imprime a soma e a média
-# 48. Crie um dicionário com nomes de pessoas e idades, e imprima só as pessoas maiores de 18
+def q47(listas):
+ soma=0
+ for numero in listas:
+  soma+=numero
+ print(soma)
+ print(soma/len(listas))
+ 
+# 48. Crie um dicionário com nomes de pessoas e idades, e imprima só as pessoas maiores de 18 
+def q48():
+ dicionario={
+ "clay":18,
+ "koutchev":25,
+ "king brawon":29,
+ "arthur": 1
+ }
+ for nome,idade in dicionario.items():
+   if idade >=18:
+    print(nome,"é maior de idade")
+
 # 49. Crie um arquivo "numeros.txt" e salve 10 números dentro, um por linha
+def q49(arquivo,numeros):
+ with open(arquivo,"a") as arq:
+     for numero in numeros:
+       arq.write(str(numero) +"\n")
+
+
 # 50. Abra o arquivo "numeros.txt" e calcule a soma de todos os números
-q43()
+def q50(arquivo):
+ soma=0
+ with open (arquivo,"r")as arq:
+     for linha in arq:
+       numero = int(linha.strip()) 
+       soma+=numero 
+ print (soma)
+
+
+q50("ola.py")
