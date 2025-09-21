@@ -1,4 +1,9 @@
 # 1. Crie uma lista com 10 números e use list comprehension para gerar uma nova lista com os quadrados desses números
+def q1():
+  numeros=[1,2,3,4,5,6,7,8,9,10]
+  quadrado=[numero**2 for numero in numeros]
+  print(numeros)
+  print(quadrado)
 # 2. Crie uma lista de nomes e use list comprehension para gerar uma lista com o tamanho de cada nome
 # 3. Use lambda para criar uma função que calcula o triplo de um número e aplique para uma lista de 5 números
 # 4. Crie uma lista de números e use map para multiplicar cada número por 2
@@ -26,3 +31,4 @@
 # 23. Crie um dicionário onde as chaves são nomes e os valores são listas de notas. Imprima a média de cada pessoa
 # 24. Crie um dicionário de cidades e suas populações e use filter para mostrar apenas cidades com mais de 1 milhão de habitantes
 # 25. Peça ao usuário para digitar palavras até digitar "fim" e crie um dicionário que conta quantas vezes cada palavra apareceu
+q1()
