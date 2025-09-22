@@ -1,8 +1,10 @@
-'''
-Lista de Exercícios referentes a estruturas de iteração (repetição)
-'''
+#Lista de Exercícios referentes a estruturas de iteração (repetição)
+
 
 #1.Faça um programa que imprima todos os números de 1 até 100.
+def q1():
+   for i in range(100):
+     print(i)
 
 #2. Faça um programa que imprima todos os números pares de 100 até 1.
 
