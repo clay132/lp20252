@@ -3,20 +3,39 @@
 
 #1.Faça um programa que imprima todos os números de 1 até 100.
 def q1():
-   for i in range(100):
+   for i in range(1,101):
      print(i)
 
 #2. Faça um programa que imprima todos os números pares de 100 até 1.
+def q2():
+  for i in range(100,0,-1):
+   if i%2==0:
+    print(i)
+
 
 #3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
+def q3():
+  for i in range (1,501):
+    if i % 5 ==0:
+     print(i)
 
 #4. Faça um programa que permita entrar com o nome, a idade e o sexo de 20
-#pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
+#pessoas.O programa deve imprimire o nome da pessoa se ela for do sexo masculino
 #e tiver mais de 21 anos.
+def q4():
+  n=0
+  while n<20:
+    nome=input("nome: ")
+    idade=int(input("idade:"))
+    sexo=input("digita m se for masculino e f se for feminina: ")
+    if idade >21 and sexo== "m":
+     print(nome)
+    n+=1
 
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
+
 
 #6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
 #Observação: os dois primeiros termos desta série são 1 e 1 e os demais são gerados
@@ -261,5 +280,5 @@ def q1():
 #Obs.: Para encerrar a entrada de dados, digite um número menor que zero para a
 #idade.
 
-questao = int(input('Questão a ser executada: '))
-eval(f'q{questao}()')
+
+q4()
