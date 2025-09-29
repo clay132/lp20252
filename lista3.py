@@ -35,6 +35,15 @@ def q4():
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
+def q5():
+   numero_1= int(input("escreva um numero: "))
+   numero_2=int(input("escreva um numero: "))
+   resultado=0
+   for _ in range(numero_1):
+     resultado+=numero_2
+     print(f"resultado: {resultado}")
+    
+
 
 
 #6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
@@ -48,6 +57,11 @@ def q4():
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
+def q6():
+ for_ in range(1,16)
+   
+   
+
 
 #8. Faça um programa que permita entrar com o nome e o salário bruto de 10 pessoas.
 #Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
@@ -281,4 +295,4 @@ def q4():
 #idade.
 
 
-q4()
+q5()
