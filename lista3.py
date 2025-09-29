@@ -52,13 +52,34 @@ def q5():
 #• 1 + 1 = 2, terceiro termo;
 #• 1 + 2 = 3, quarto termo, etc.
 # 1 1 2 3 5 8 13 21
+def q6():
+   a,b=1,1
+   print(a,b, end=" ")
+   for _ in range(18):
+     a, b=b, a +b
+     print(b, end=" ")
 
 #7. Crie um programa que permita entrar com o nome, a nota da
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
-def q6():
- for_ in range(1,16)
+def q7():
+  soma_media=0
+  
+  for _ in range(2):
+    nome=input('nome: ')
+    prova_1=int(input("digite a nota da prova: "))
+    prova_2=int(input("digite a nota da prova: "))
+    media_aluno= (prova_1 + prova_2)/2
+    soma_media+=media_aluno
+    
+    
+
+    print(f'nome: {nome} primeira prova: {prova_1} segunda prova: {prova_2} medeia:  {media_aluno}')
+    media_geral=soma_media/2
+  print(f'media da turma é : {media_geral}')
+
+
    
    
 
@@ -295,4 +316,4 @@ def q6():
 #idade.
 
 
-q5()
+q7()
