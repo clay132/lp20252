@@ -112,10 +112,37 @@ def q8():
 #• A quantidade de pessoas que responderam regular;
 #• A percentagem de pessoas que responderam bom entre todos os expectadores
 #analisados.
+def q9 ():
+ 
+ soma_idade_excelente=0
+ excelente=0
+ regular=0
+ bom=0
+ rodar=3
+ for _ in range(rodar):
+   idade=int(input("digita  sua idade: "))
+   opiniao=int(input("o que acharam do filme: exelente-3  - bom - 2  regular - 1: "))
+   if opiniao== 3:
+    soma_idade_excelente+=idade
+    excelente+=1
+   elif opiniao== 1:
+    regular+=1
+   elif opiniao== 2:
+    bom+=1
+
+ if excelente>0:
+  media= soma_idade_excelente/ excelente
+ else:
+  media=0 
+
+ print('a media de idade pessoas que acharam  execelente:', media)
+ print("a quantidade de pessoas que acharam regular:",regular)
+ print("a porcentagem de pessoas que accharam bom:", (bom/rodar)*100)
 
 #10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 #que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
 #jogadores, crie um programa que apresente as seguintes informações:
+
 #
 #• O peso médio e a idade média de cada um dos times;
 #• O atleta mais pesado de cada time;
@@ -327,4 +354,4 @@ def q8():
 #idade.
 
 
-q8()
+q9()
