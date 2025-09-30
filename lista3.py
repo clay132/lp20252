@@ -91,6 +91,17 @@ def q7():
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
+def q8():
+ for _ in range (10):
+   nome=input("nome: ")
+   salario=int(input("salario bruto: "))
+   if salario< 1300:
+    print("isento de imposto")
+   elif salario >= 1300 and salario> 2300:
+    print( (10/100)*salario) 
+   else:
+     print((15/100)*salario)
+
 
 #9. No dia da estreia do filme "Procurando Dory", uma grande emissora de TV realizou
 #uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
@@ -316,4 +327,4 @@ def q7():
 #idade.
 
 
-q7()
+q8()
