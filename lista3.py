@@ -148,7 +148,40 @@ def q9 ():
 #• O atleta mais pesado de cada time;
 #• O atleta mais jovem de cada time;
 #• O peso médio e a idade média de todos os participantes.
+  conta_peso=0
+  conta_idade=0
+  quanti_nome=0
+  maior_peso=0
+  menor_idade=0
+  pais=30
+  jogador=12
+  peso_pais=0
+  idade_pais=0
+  pais=0
+  for _ in range(pais)
+    peso_pais=0
+    idade_pais=0
+    pais+1
+
+   for _ in range(jogador)
+     nome_time=input("qual é o seu time:")
+     nome=input("nome:")
+     idade=int(input("digita a sua idade: "))
+     peso=int(input("digita o seu peso: "))
+     conta_peso=+peso
+     conta_idade=+idade
+     quanti_nome+=1
+     if peso >=maior_peso:
+       maior_peso=peso
+     if idade<= menor_idade:
+       menor_idade= idade
+  print(f'peso medio dos time{conta_peso/quanti_nome} idade media dos times {conta_idade/quanti_nome}')
+  print(f'o jogador mais pesado é {maior_peso} o jogador com menor idade {menor_idade}')
+
+
     
+
+
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
