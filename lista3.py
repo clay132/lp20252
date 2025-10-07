@@ -257,6 +257,44 @@ def q12():
 #• O custo total para cada consumidor
 #• O total de consumo para os três tipos de consumidor
 #• A média de consumo dos tipos 1 e 2
+def q13():
+  
+   soma_tipo1=0
+   soma_tipo2=0
+   soma_12=0
+   numero_consumidor=int(input("digita o seu numero: "))
+   while numero_consumidor !=0 :
+     tipo_consumidor=int(input("digita o tipo de de consumitor (1 residencial(2 comercial)(3 industrial))"))
+     quantidade_kwh=float(input("qual foi a quantidade do kwh: "))
+    
+     if tipo_consumidor==1:
+       tipo_1= quantidade_kwh * 0.30
+       soma_tipo1+=quantidade_kwh
+       soma_12+=1
+       print(f'o valor é {tipo_1}')
+     elif tipo_consumidor==2:
+        tipo_2= quantidade_kwh*0.50
+        soma_tipo2+=quantidade_kwh 
+        soma_12+=1
+        print(f'o valor é {tipo_2}')
+     else :   
+       tipo_3= quantidade_kwh*0.70
+       print(f'o valor é {tipo_3}')
+     numero_consumidor=int(input("digita o seu numero: "))  
+
+   media=(soma_tipo1 + soma_tipo2)/ soma_12 
+   print(f'a media do comsumidor residencial e comercial é de { media} ')     
+
+
+
+
+
+  
+  
+
+
+
+  
 
 #14. Faça um programa que leia vários números inteiros e apresente o fatorial de cada
 #número. O algoritmo encerra quando se digita um número menor do que 1.n
@@ -440,4 +478,4 @@ def q12():
 #idade.
 
 
-q12()
+q13
