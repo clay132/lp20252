@@ -148,35 +148,73 @@ def q9 ():
 #• O atleta mais pesado de cada time;
 #• O atleta mais jovem de cada time;
 #• O peso médio e a idade média de todos os participantes.
-  conta_peso=0
-  conta_idade=0
-  quanti_nome=0
-  maior_peso=0
-  menor_idade=0
-  pais=30
-  jogador=12
-  peso_pais=0
-  idade_pais=0
-  pais=0
-  for _ in range(pais)
-    peso_pais=0
-    idade_pais=0
-    pais+1
+def q10():
 
-   for _ in range(jogador)
-     nome_time=input("qual é o seu time:")
-     nome=input("nome:")
-     idade=int(input("digita a sua idade: "))
-     peso=int(input("digita o seu peso: "))
-     conta_peso=+peso
-     conta_idade=+idade
-     quanti_nome+=1
-     if peso >=maior_peso:
-       maior_peso=peso
-     if idade<= menor_idade:
-       menor_idade= idade
-  print(f'peso medio dos time{conta_peso/quanti_nome} idade media dos times {conta_idade/quanti_nome}')
-  print(f'o jogador mais pesado é {maior_peso} o jogador com menor idade {menor_idade}')
+ qtd_paises = 30
+ qtd_jogadores = 12
+
+
+ media_pesos_times = []
+ media_idades_times = []
+ mais_pesado_times = [] 
+ mais_jovem_times = []
+
+
+ soma_peso_geral = 0
+ soma_idade_geral = 0
+ total_jogadores = qtd_paises * qtd_jogadores
+
+ for pais in range(1, qtd_paises + 1):
+    print(f"\n=== País {pais} ===")
+    soma_peso = 0
+    soma_idade = 0
+    mais_pesado = 0
+    mais_jovem = 200  
+    
+    for jogador in range(1, qtd_jogadores + 1):
+        print(f"\nJogador {jogador} do país {pais}:")
+        peso = float(input("  Peso (kg): "))
+        idade = int(input("  Idade (anos): "))
+        
+        soma_peso += peso
+        soma_idade += idade
+        
+        
+        if peso > mais_pesado:
+            mais_pesado = peso
+        
+        
+        if idade < mais_jovem:
+            mais_jovem = idade
+    
+    
+    media_peso = soma_peso / qtd_jogadores
+    media_idade = soma_idade / qtd_jogadores
+    
+    media_pesos_times.append(media_peso)
+    media_idades_times.append(media_idade)
+    mais_pesado_times.append(mais_pesado)
+    mais_jovem_times.append(mais_jovem)
+    
+    soma_peso_geral += soma_peso
+    soma_idade_geral += soma_idade
+
+
+ media_peso_geral = soma_peso_geral / total_jogadores
+ media_idade_geral = soma_idade_geral / total_jogadores
+
+ print("\n========== RESULTADOS ==========")
+ for i in range(qtd_paises):
+    print(f"\nPaís {i+1}:")
+    print(f"  Peso médio: {media_pesos_times[i]:.2f} kg")
+    print(f"  Idade média: {media_idades_times[i]:.1f} anos")
+    print(f"  Jogador mais pesado: {mais_pesado_times[i]:.2f} kg")
+    print(f"  Jogador mais jovem: {mais_jovem_times[i]} anos")
+
+ print("\n----- MÉDIA GERAL -----")
+ print(f"Peso médio geral: {media_peso_geral:.2f} kg")
+ print(f"Idade média geral: {media_idade_geral:.1f} anos")
+
 
 
     
@@ -185,11 +223,26 @@ def q9 ():
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
+def q11():
+ para=0
+ numero=int(input("digita um numero: "))
+ while numero > para:
+    numero=int(input("digita um numero: "))
 
 #12. Dado um país A, com 5 milhões de habitantes e uma taxa de natalidade de 3% ao
 #ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao
 #ano, fazer um programa que calcule e imprima o tempo necessário para que a
 #população do país A ultrapasse a população do país B.
+def q12():
+ A=5000.000
+ B=7000.000
+ anos=0
+ while A <=B:
+   A*=1.03
+   B*=1.02
+   anos+=1
+ 
+ print(f'foram {anos} anos pra superar a populaçao B')  
 
 #13. Uma empresa de fornecimento de energia elétrica faz a leitura mensal dos medidores
 #de consumo. Para cada consumidor, são digitados os seguintes dados:
@@ -387,4 +440,4 @@ def q9 ():
 #idade.
 
 
-q9()
+q12()
