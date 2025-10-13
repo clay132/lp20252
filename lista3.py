@@ -297,12 +297,38 @@ def q13():
   
 
 #14. Faça um programa que leia vários números inteiros e apresente o fatorial de cada
-#número. O algoritmo encerra quando se digita um número menor do que 1.n
+#número. O algoritmo encerra quando se digita um número menor do que 1.
+def q14():
+  n=1
+  v=1
+  numero=int(input("digita numeros inteiros: "))
+  for i in range(1, numero+1):
+    if numero>=1:
+      n*=i
+    else:
+      break  
+
+  print(f' o fatorial de {numero} é {n}')
 
 #15. Faça um programa que permita entrar com a idade de várias pessoas e
 #imprima:
 #• total de pessoas com menos de 21 anos
-#• total de pessoas com mais de 50 anos
+#• total de pessoas com mais de 50 anos 
+def q15():
+ 
+ total_menor21=0
+ total_maior50=0
+ for _  in range(5):
+   idade=int(input("digita a sua idade: "))
+   if idade < 21:
+     total_menor21+=1
+   elif idade > 50:
+     total_maior50+=1
+   else:
+     break
+ print(f'dade maior que 50 sao {total_maior50} e menor que 21 é {total_menor21} ')
+
+
 
 #16. Sabendo-se que a unidade lógica e aritmética calcula a divisão por meio de subtrações
 #sucessivas, criar um algoritmo que calcule e imprima o resto da divisão de
@@ -312,7 +338,7 @@ def q13():
 #ao resto. Suponha que os números lidos sejam positivos e que o dividendo
 #seja maior do que o divisor.
 #Exemplo:
-#  10 / 5
+#  10 / 5O range(1, n + 1) g
 #  10 é o Dividendo
 #  5 é o Divisor
 #  2 é o Quociente (resultado inteiro da divisão)
@@ -478,4 +504,4 @@ def q13():
 #idade.
 
 
-q13
+q15()
