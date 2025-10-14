@@ -299,16 +299,19 @@ def q13():
 #14. Faça um programa que leia vários números inteiros e apresente o fatorial de cada
 #número. O algoritmo encerra quando se digita um número menor do que 1.
 def q14():
-  n=1
-  v=1
-  numero=int(input("digita numeros inteiros: "))
-  for i in range(1, numero+1):
-    if numero>=1:
-      n*=i
-    else:
-      break  
+  
+  
+  
+  while True:
+     numero=int(input("digita numeros inteiros: "))
+     if numero<=0:
+       break
+     else:
+        n=1
+        for i in range(1,numero +1):
+           n*=i
 
-  print(f' o fatorial de {numero} é {n}')
+        print(f' o fatorial de {numero} é {n}')
 
 #15. Faça um programa que permita entrar com a idade de várias pessoas e
 #imprima:
@@ -344,6 +347,7 @@ def q15():
 #  2 é o Quociente (resultado inteiro da divisão)
 #  0 é o Resto da Divisão
 
+
 #17. Crie um programa que possa ler um conjunto de pedidos de compra e
 #calcule o valor total da compra. Cada pedido é composto pelos seguintes campos:
 #• número de pedido
@@ -352,6 +356,14 @@ def q15():
 #• quantidade
 #O programa deverá processar novos pedidos até que o usuário digite 0 (zero)
 #como número do pedido.
+def q16():
+  while True:
+     numero_pedido=int(input("digita o numero do pedido: "))
+     date_pedido=int(())
+     if numero_pedido <=0:
+        break
+      else:
+           
 
 #18. Uma pousada estipulou o preço para a diária em R$30,00 e mais uma taxa de
 #serviços diários de:
