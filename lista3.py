@@ -362,7 +362,7 @@ def q16():
      date_pedido=int(())
      if numero_pedido <=0:
         break
-      else:
+      
            
 
 #18. Uma pousada estipulou o preço para a diária em R$30,00 e mais uma taxa de
@@ -373,6 +373,32 @@ def q16():
 #cliente e ao final o total faturado pela pousada.
 #O programa deverá ler novos clientes até que o usuário digite 0 (zero) como
 #número da conta.
+def q18():
+  conta_pousada=0
+  
+  while True:
+    nome=input("nome: ")
+    numero_conta=int(input("numero da conta"))
+    if numero_conta ==0:
+      break 
+    print(f"numero da conta: {numero_conta} nome: {nome} ")   
+    dias=int(input("quantos dias quer reserva: "))
+    diaria=30
+    if dias <10:
+      taxa=15
+    else:
+      taxa=8 
+    conta_cliente= (diaria +taxa) *dias
+    conta_pousada+= conta_cliente
+    print("a conta deu ",conta_cliente)
+  print("a pousada ganho ",conta_pousada )  
+
+
+
+   
+
+
+
 
 #19. Em uma Universidade, os alunos das turmas de informática fizeram uma prova
 #de algoritmos. Cada turma possui um número de alunos. Criar um programa que
@@ -516,4 +542,4 @@ def q16():
 #idade.
 
 
-q15()
+q18()
