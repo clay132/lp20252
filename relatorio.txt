@@ -1,0 +1,9 @@
+RELATÓRIO DO SISTEMA
+-------------------------
+Total de viagens: 2
+Distância total: 108.00 km
+Combustível total: 160.00 L
+Média do veículo: 0.68 km/L
+
+Viagem mais longa: 58.0 km (12/05/2025)
+Viagem mais curta: 50.0 km (10/05/2025)
