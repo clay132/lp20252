@@ -1,0 +1,152 @@
+#1. Limpeza completa de um dataset “sujo”
+
+#Tarefa:
+
+#Baixe um CSV grande de dados reais (ex.: Brazilian E-commerce Public Dataset, Airbnb Rio, Vendas de lojas do Kaggle).
+
+#Carregue com pandas.
+
+#Resolva:
+
+#Dados faltando → aplicar preenchimento inteligente (não pode ser tudo com zero/mean).
+
+#Dados duplicados.
+
+#Datas no formato errado.
+
+#Valores absurdos (ex.: idade 800).
+
+#Colunas inconsistentes (“sim/Sim/SIM”, etc).
+
+#Entrega:
+
+#Um DataFrame final totalmente limpo.
+
+#Um relatório impresso no terminal mostrando tudo o que você corrigiu.
+
+#Por que é difícil:
+#Limpeza é onde 70% do trabalho real acontece. Pouca gente faz bem.
+
+#2. Criar um Dashboard de KPIs só com Pandas (sem biblioteca gráfica)
+
+#Tarefa:
+#A partir de um CSV de vendas:
+
+#Calcular:
+
+#Total vendido por mês
+
+#Ticket médio
+
+#Produto mais vendido
+
+#Cliente que mais gastou
+
+#Crescimento mês a mês (%)
+
+#No final, imprimir um “dashboard” no terminal, organizado e alinhado.
+
+#Exemplo de saída (só ideia):
+
+#===== KPIS DE VENDAS =====
+#Total Geral: R$ 129.500
+#Ticket Médio: R$ 87,32
+#Produto Top: "Teclado Mecânico"
+#Cliente Nº1: João Lima (R$ 3.280)
+#Crescimento Maio -> Junho: +14,8%
+#==========================
+
+
+#Por que é difícil:
+#Obriga a trabalhar com groupby, agregações avançadas, ordenação e manipulação de datas.
+
+#3. Análise de comportamento de usuários (Churn simples)
+
+#Tarefa:
+#ado um CSV com colunas:
+
+#user_id
+
+#data_compra
+
+#valor
+
+#ativo (0 ou 1)
+
+#Você deve:
+
+#Descobrir o percentual de usuários “inativos”.
+
+#Encontrar características que diferenciam eles dos ativos.
+
+#Criar uma coluna nova risco_churn com:
+
+#“alto”
+
+#“médio”
+
+#“baixo”
+
+#(com base em critérios que você define).
+
+#Por que é difícil:
+#Você precisa pensar como analista de dados, não só codar.
+
+#4. Junção de múltiplos datasets + exportação
+
+#Tarefa:
+
+#Baixe 3 arquivos CSV diferentes:
+
+#clientes.csv
+
+#compras.csv
+
+#produtos.csv
+
+#E faça:
+
+#Um merge complexo entre os 3.
+
+#Resolver conflitos de nome de coluna.
+
+#Criar novas métricas (valor total da compra, quantidade média, etc).
+
+#Exportar para:
+
+#CSV
+
+#JSON
+
+#Excel (xlsx)
+
+#Por que é difícil:
+#Merge é onde muita gente erra — ainda mais com 3 bases.
+
+#5. Criar um “mini-sistema” de banco de dados usando pandas
+
+#Tarefa:
+#Simular um sistema de estoque:
+
+#Um CSV com produtos.
+
+#Um CSV com entradas e saídas.
+
+#Um script que:
+
+#Atualiza estoque.
+
+#Verifica produtos em falta.
+
+#Gera um relatório final.
+
+#Exemplo do relatório:
+
+#Produtos com estoque < 10
+
+#Produtos que tiveram mais saídas que entradas
+
+#Produtos nunca movimentados
+
+#Por que é difícil:
+#Exige lógica, filtragem combinada, merges, cálculo e organização.
